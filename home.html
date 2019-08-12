@@ -18,7 +18,7 @@ $result = $db->query($query);
 while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
     echo "<tr>";
     echo "<td>" . $row["employee_id"] . "</td>";
-    echo "<td>" . htmlspecialchars($row["Full_Name"]) . "</td>";
+    echo "<td>" . htmlspecialchars($row["name"]) . "</td>";
     echo "</tr>";
 }
 $result->closeCursor();
