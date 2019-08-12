@@ -12,8 +12,8 @@
    </thead>
    <tbody>
 <?php
-$query = "SELECT Full_Name"
-    . "FROM contact";
+$query = "select name "
+    . "from contact.contact";
 $result = $db->query($query);
 while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
     echo "<tr>";
